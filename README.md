@@ -1,3 +1,3 @@
 # Restaurant
 
-This will be a dog friendly restaurant
+This will be a dog friendly restaurant!
