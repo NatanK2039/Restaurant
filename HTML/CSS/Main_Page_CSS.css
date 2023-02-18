@@ -1,4 +1,9 @@
 h1 {
+    font-size: 500px;
+}
+
+
+h1 {
     font-size: 50px;
     background-color: rgb(43, 117, 62);
     text-align: center;
