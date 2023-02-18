@@ -1,0 +1,39 @@
+h1 {
+    font-size: 50px;
+    background-color: rgb(43, 117, 62);
+    text-align: center;
+}
+
+.dog-with-family {
+    width: 400px;
+    float: left;
+    border-radius: 3%;
+    margin-top: 10px;
+    margin-right: 40px;
+    object-fit: cover;
+}
+
+.history {
+    font-weight: bold;
+}
+
+#history-text-and-img-div{
+    width: 800px;
+    height: 50px;
+}
+
+#main{
+    padding-top: 100px;
+    padding-left: 150px;
+}
+
+aside{
+    position: absolute;
+    left: 1000px;
+    background-color: aliceblue;
+}
+
+.shortened-menu{
+    font-size: 25px;
+    font-weight: bold;
+}
