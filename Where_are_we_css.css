@@ -8,3 +8,15 @@ h1 {
     background-color: rgb(205, 255, 217);
     text-align: center;
 }
+
+#locations {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* A shortcut exists for this the last 2 lines. flex-flow: row wrap; */
+}
+
+article {
+    flex: 200px;
+
+}
