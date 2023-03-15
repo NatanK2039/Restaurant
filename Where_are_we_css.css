@@ -13,10 +13,58 @@ h1 {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    flex: 1;
     /* A shortcut exists for this the last 2 lines. flex-flow: row wrap; */
 }
 
-article {
-    flex: 200px;
+#smolna {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1; /*This dictates the priority of how much available space can be given. assuming three articles have 1-1-2 priority, then 1+1+2=4 meaning that eaach article with a priority of 1 will take up 1/4 of thee available space, and the largest article, with a priority of 2, will take up 2/4 of the available space. */
+}
+
+#smolna-top{
+    flex: 1 100px;
+    flex-flow: row;
+    flex-direction: row;
+    background-color: aliceblue;
+}
+
+#smolna-image{
+    width: 400px;
 
 }
+
+#smolna-bottom{
+    flex-flow: row;
+
+}
+
+#pierwszego-maja{
+    flex: 1;
+}
+
+#lorem-ipsum-2{
+    
+}
+
+#kosciuszki{
+    flex: 1;
+}
+
+#lorem-ipsum-3{
+    
+}
+
+article {
+    flex: 200px; /*the relevant articles will be AT LEAST 200 px wide.*/
+    padding: 10px;
+    margin: 10px;
+    background: aqua;
+}
+
+
+
+
+
