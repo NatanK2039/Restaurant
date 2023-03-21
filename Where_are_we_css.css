@@ -19,25 +19,29 @@ h1 {
 
 #smolna {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     flex: 1; /*This dictates the priority of how much available space can be given. assuming three articles have 1-1-2 priority, then 1+1+2=4 meaning that eaach article with a priority of 1 will take up 1/4 of thee available space, and the largest article, with a priority of 2, will take up 2/4 of the available space. */
 }
 
 #smolna-top{
+    display: flex;
     flex: 1 100px;
     flex-flow: row;
     flex-direction: row;
-    background-color: aliceblue;
+    background-color: aqua;
 }
 
 #smolna-image{
-    width: 400px;
+    width: 200px;
+    height: 200px;
 
 }
 
 #smolna-bottom{
-    flex-flow: row;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row; 
 
 }
 
