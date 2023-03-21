@@ -43,23 +43,20 @@ h1 {
     justify-content: space-evenly;
     flex-flow: row; 
 
+
 }
 
 #pierwszego-maja{
     flex: 1;
 }
 
-#lorem-ipsum-2{
-    
-}
+
 
 #kosciuszki{
     flex: 1;
 }
 
-#lorem-ipsum-3{
-    
-}
+
 
 article {
     flex: 200px; /*the relevant articles will be AT LEAST 200 px wide.*/
