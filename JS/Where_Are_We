@@ -1,0 +1,9 @@
+function menupopup(){
+    alert('This will bring up the Menu popup');
+}
+function openinghours(){
+    alert('This will bring up the opening hours popup')
+}
+function rating(){
+    alert('This will bring up the rating popup')
+}
