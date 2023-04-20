@@ -1,9 +1,35 @@
-function menupopup(){
-    alert('This will bring up the Menu popup');
+function smolnamenu() {
+  const h1 = document.querySelector("#lorem-ipsum-smolna");
+  const ul = document.createElement("ul");
+  const li1 = document.createElement("li");
+  const li2 = document.createElement("li");
+  const title = document.createElement("p");
+
+  title.innerText = "In addition to the regular Psiakowo Menu, we have:";
+  li1.innerText = "1 = 1";
+  li2.innerText = "2 = 2";
+
+  ul.appendChild(li1);
+  ul.appendChild(li2);
+
+  h1.innerText = "";
+  h1.appendChild(title);
+  h1.appendChild(ul);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#showsmolnamenu").onclick = function() {
+    smolnamenu();
+  }
+});
+
+
+
+
 function openinghours(){
     alert('This will bring up the opening hours popup')
 }
 function rating(){
     alert('This will bring up the rating popup')
 }
+
