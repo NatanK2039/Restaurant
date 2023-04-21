@@ -1,20 +1,21 @@
 function smolnamenu() {
-  const h1 = document.querySelector("#lorem-ipsum-smolna");
+  const original = document.querySelector("#lorem-ipsum-smolna");
+  const maintext = document.createElement("p");
   const ul = document.createElement("ul");
   const li1 = document.createElement("li");
   const li2 = document.createElement("li");
-  const title = document.createElement("p");
 
-  title.innerText = "In addition to the regular Psiakowo Menu, we have:";
+
+  maintext.innerText = "In addition to the regular Psiakowo Menu, we have:";
   li1.innerText = "1 = 1";
   li2.innerText = "2 = 2";
 
   ul.appendChild(li1);
   ul.appendChild(li2);
 
-  h1.innerText = "";
-  h1.appendChild(title);
-  h1.appendChild(ul);
+  original.innerHTML = ""; // clear content using innerHTML
+  original.appendChild(maintext);
+  original.appendChild(ul);
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -23,13 +24,63 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+function smolnahours() {
+  const original = document.querySelector("#lorem-ipsum-smolna");
+  const maintext = document.createElement("p")
+  const ul = document.createElement("ul");
+  const li1 = document.createElement("li");
+  const li2 = document.createElement("li");
+  const li3 = document.createElement("li");
+  const li4 = document.createElement("li");
+  const li5 = document.createElement("li");
+  const li6 = document.createElement("li");
+  const li7 = document.createElement("li");
 
+  maintext.innerText = "Our Opening times (Including public holidays)are as follows:"
+  li1.innerText = ("Monday: 8AM-12AM")
+  li2.innerText = ("Tuesday: 8AM - 12AM")
+  li3.innerText = ("Wednesday:8AM - 12AM")
+  li4.innerText = ("Thursday: 8AM - 12AM")
+  li5.innerText = ("Friday: 8AM - 12AM")
+  li6.innerText = ("Saturday: 8AM - 12 AM")
+  li7.innerText = ("Sunday: Closed")
 
+  ul.appendChild(li1);
+  ul.appendChild(li2);
+  ul.appendChild(li3);
+  ul.appendChild(li4);
+  ul.appendChild(li5);
+  ul.appendChild(li6);
+  ul.appendChild(li7);
 
-function openinghours(){
-    alert('This will bring up the opening hours popup')
+  original.innerHTML = ""; // clear content using innerHTML
+  original.appendChild(maintext);
+  original.appendChild(ul);
 }
-function rating(){
-    alert('This will bring up the rating popup')
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#showsmolnahours").onclick = function() {
+    smolnahours();
+  }
+});
+
+function smolnarating() {
+  const original = document.querySelector("#lorem-ipsum-smolna")
+  const maintext = document.createElement("p")
+  const review = document.createElement("p")
+
+  maintext.innerText = "Our restaurant was reviewed by 26 customers. The average review given, out of 5 is:"
+  review.innerText = "4.5"
+
+  original.innerHTML = "";
+  original.appendChild(maintext);
+  original.appendChild(review);
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#showsmolnarating").onclick = function() {
+    smolnarating();
+  }
+});
+
 
