@@ -5,7 +5,6 @@ function smolnamenu() {
   const li1 = document.createElement("li");
   const li2 = document.createElement("li");
 
-
   maintext.innerText = "In addition to the regular Psiakowo Menu, we have:";
   li1.innerText = "1 = 1";
   li2.innerText = "2 = 2";
@@ -16,6 +15,7 @@ function smolnamenu() {
   original.innerHTML = ""; // clear content using innerHTML
   original.appendChild(maintext);
   original.appendChild(ul);
+  replaceButtonWithMainInfo('showsmolnamenu');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -23,6 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
     smolnamenu();
   }
 });
+
+
 
 function smolnahours() {
   const original = document.querySelector("#lorem-ipsum-smolna");
@@ -56,6 +58,7 @@ function smolnahours() {
   original.innerHTML = ""; // clear content using innerHTML
   original.appendChild(maintext);
   original.appendChild(ul);
+  replaceButtonWithMainInfo('showsmolnahours');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -63,6 +66,9 @@ document.addEventListener('DOMContentLoaded', function() {
     smolnahours();
   }
 });
+
+
+
 
 function smolnarating() {
   const original = document.querySelector("#lorem-ipsum-smolna")
@@ -75,6 +81,7 @@ function smolnarating() {
   original.innerHTML = "";
   original.appendChild(maintext);
   original.appendChild(review);
+  replaceButtonWithMainInfo('showsmolnarating');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -83,4 +90,31 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
+
+
+function replaceButtonWithMainInfo(id) {
+  const originalButton = document.getElementById(id);
+  
+  // create new button element
+  const newButton = document.createElement('button');
+  newButton.innerText = 'Main Info';
+  newButton.onclick = function() {
+    smolnamaininfo();
+  };
+
+  // replace original button with new button
+  originalButton.parentNode.replaceChild(newButton, originalButton);
+}
+
+
+
+function smolnamaininfo() {
+  const original = document.querySelector("#lorem-ipsum-smolna")
+  const text = document.createElement("p")
+
+  text.innerText = "Lorem ipsum dolor sit amet,rerit turpis. e effellus nulla, viverra non neque non, consectetur accumsan mauris. Praesent maximus porta diam vel molestie. Aliquam sodales elit nibh, vel gravida tellus efficitur mattis.";
+
+  original.innerHTML = "";
+  original.appendChild(text)
+}
 
