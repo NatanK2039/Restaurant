@@ -1,7 +1,11 @@
+body {
+    background-image: url(../Images/Mur.jpg);
+    background-size: cover;
+}
 
 nav {
     text-align: center;
-    background-color: aliceblue;
+    background-color: aqua;
 }
 
 h1 {
@@ -40,7 +44,7 @@ h1 {
 aside{
     position: absolute;
     left: 1200px;
-    background-color: aliceblue;
+    background-color: aqua;
 }
 
 .short-menu-title{
@@ -48,4 +52,8 @@ aside{
     font-weight: bold;
     position: relative;
     right: 25px;
+}
+
+#text {
+    background-color: aqua;
 }
