@@ -1,3 +1,9 @@
+body {
+    background-image: url(../Images/Mur.jpg);
+    background-size: cover;
+}
+
+
 nav {
     text-align: center;
     background-color: aqua;

@@ -107,13 +107,13 @@ function replacebuttonwithmaininfo(id) {
 }
 
 
-
-function smolnamaininfo() {
-  const original = document.querySelector("#lorem-ipsum-smolna")
-  const text = document.createElement("p")
-
-  text.innerText = "Lorem ipsum dolor sit amet,rerit turpis. e effellus nulla, viverra non neque non, consectetur accumsan mauris. Praesent maximus porta diam vel molestie. Aliquam sodales elit nibh, vel gravida tellus efficitur mattis.";
-
-  original.innerHTML = "";
-  original.appendChild(text)
-}
+//
+//function smolnamaininfo() {
+//  const original = document.querySelector("#lorem-ipsum-smolna")
+//  const text = document.createElement("p")
+//
+//  text.innerText = "Lorem ipsum dolor sit amet,rerit turpis. e effellus nulla, viverra non neque non, consectetur accumsan mauris. Praesent maximus porta diam vel molestie. Aliquam sodales elit nibh, vel gravida tellus efficitur mattis.";
+//
+//  original.innerHTML = "";
+//  original.appendChild(text)
+//}
