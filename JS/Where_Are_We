@@ -1,17 +1,5 @@
 function smolnamenu() {
   const original = document.querySelector("#lorem-ipsum-smolna");
-  const originalbutton = document.getElementById('showsmolnamenu');
-  let originalcontent;
-
-  if (!originalbutton) {
-    const placeholder = document.createElement("button");
-    placeholder.innerHTML = "Replaced Button";
-    placeholder.id = "replacedbutton";
-    originalcontent = placeholder.cloneNode(true);
-  } else {
-    originalcontent = originalbutton.cloneNode(true);
-  }
-
   const maintext = document.createElement("p");
   const ul = document.createElement("ul");
   const li1 = document.createElement("li");
@@ -24,10 +12,10 @@ function smolnamenu() {
   ul.appendChild(li1);
   ul.appendChild(li2);
 
-  original.innerHTML = "";
+  original.innerHTML = ""; // clear content using innerHTML
   original.appendChild(maintext);
   original.appendChild(ul);
-  replacebuttonwithmaininfo('showsmolnamenu', originalcontent);
+  replacebuttonwithmaininfo('showsmolnamenu');
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -103,35 +91,29 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+
 function replacebuttonwithmaininfo(id) {
-  const originalbutton = document.getElementById(id);
-  const originalcontent = originalbutton.innerHTML; // get the original button content
-
-  const newbutton = document.createElement('button');
-  newbutton.innerText = "Main Info";
-  newbutton.id = "maininfobutton";
-  newbutton.onclick = function() {
-    smolnamaininfo(newbutton, originalcontent);
-  }
-
-  originalbutton.parentNode.replaceChild(newbutton, originalbutton);
-} // add this closing curly brace
-
-function smolnamaininfo(button, originalcontent) {
-  const originaltext = document.querySelector("#lorem-ipsum-smolna")
-  const newtext = document.createElement("p")
-
-  newtext.innerText = "Lorem ipsum dolor sit amet,rerit turpis. e effellus nulla, viverra non neque non, consectetur accumsan mauris. Praesent maximus porta diam vel molestie. Aliquam sodales elit nibh, vel gravida tellus efficitur mattis.";
-
-  originaltext.innerHTML = "";
-  originaltext.appendChild(newtext)
-  revertchanges(button, originalcontent); // pass button as a parameter
+  const originalButton = document.getElementById(id);
+  
+  // create new button element
+  const newButton = document.createElement('button');
+  newButton.innerText = 'Main Info';
+  newButton.onclick = function() {
+    location.reload();
+  };
+  
+  // replace original button with new button
+  originalButton.parentNode.replaceChild(newButton, originalButton);
 }
 
-function revertchanges(button, originalcontent) {
-  button.innerHTML = originalcontent;
-  button.onclick = function(){
-    smolnamenu();
-  };
-  button.id = "replacedbutton";
+
+
+function smolnamaininfo() {
+  const original = document.querySelector("#lorem-ipsum-smolna")
+  const text = document.createElement("p")
+
+  text.innerText = "Lorem ipsum dolor sit amet,rerit turpis. e effellus nulla, viverra non neque non, consectetur accumsan mauris. Praesent maximus porta diam vel molestie. Aliquam sodales elit nibh, vel gravida tellus efficitur mattis.";
+
+  original.innerHTML = "";
+  original.appendChild(text)
 }
