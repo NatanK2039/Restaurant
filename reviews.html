@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Psiakowo - Reviews </title>
+        <script src="./JS/reviews_js.js"></script>
+        <link rel="stylesheet" href="./CSS/reviews_css.css">
+    </head>
+    
+    <header>
+        <h1>Psiakowo - Reviews</h1>
+        <nav>
+            <button type="button" onclick="location.href='./index.html'">Main Page</button>
+            <button type="button" onclick="location.href='./Where_Are_We.html'">Where Are We?</button>
+            <button type="button" onclick="location.href='./Menu.html'">See Menu</button>
+        </nav>
+    </header>
+
+    <body>
+        <div class="container">
+            <article>
+                <div class="reviews">
+                    <h2>Our Current Reviews:</h2>
+                    <p id = "currentreviews"></p>
+                </div>
+            </article>
+            <article>
+                <div class="input">
+                    <label for="customername">Enter your name:</label>
+                    <input type="textarea" id="customername" name="customername">
+
+                    <label for="contact">Enter your contact details (Optional)</label>
+                    <input type="textarea" id="contact" name="contact-details">
+                    
+                    <label for="review">Enter your review</label>
+                    <input type="textarea" id="review" name="reviewmessage">
+                    <button type="button" onclick="reviewsubmition()">Submit</button>
+                </div>
+            </article>
+        </div>
+
+    </body>
+</html>

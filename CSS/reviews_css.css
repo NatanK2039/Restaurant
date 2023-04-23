@@ -1,0 +1,59 @@
+body {
+    background-image: url(../Images/Mur.jpg);
+    background-size: cover;
+}
+
+nav {
+    text-align: center;
+
+}
+
+h1 {
+    font-size: 50px;
+    background-color: rgb(205, 255, 217);
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+
+article {
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.reviews {
+    background-color: aqua;
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    text-align: center;
+    margin-bottom: 1rem;
+    padding-left: 15px;
+
+  }
+  
+  .input label {
+    margin-top: 25px;
+    margin-bottom: 0.5rem;
+    background-color: aqua;
+    max-width: 267px;
+  }
+  
+  .input input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 25.25rem;
+    max-width: 250px;
+  }
