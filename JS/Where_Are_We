@@ -16,10 +16,6 @@ function smolnamenu() {
   original.appendChild(maintext);
   original.appendChild(ul);
   replacebuttonwithmaininfo('showsmolnamenu');
-
-  window.open("test.html", "new window", "top=100,left=100,width=640,height=480,status=yes");
-
-
 }
 
 document.addEventListener('DOMContentLoaded', function() {
