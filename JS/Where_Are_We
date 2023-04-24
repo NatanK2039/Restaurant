@@ -92,6 +92,194 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+
+function pierwszego_maja_menu() {
+  const original = document.querySelector("#lorem-ipsum-2");
+  const maintext = document.createElement("p");
+  const ul = document.createElement("ul");
+  const li1 = document.createElement("li");
+  const li2 = document.createElement("li");
+
+  maintext.innerText = "In addition to the regular Psiakowo Menu, we have:";
+  li1.innerText = "Garlic Bread";
+  li2.innerText = "Hotdogs";
+
+  ul.appendChild(li1);
+  ul.appendChild(li2);
+
+  original.innerHTML = ""; // clear content using innerHTML
+  original.appendChild(maintext);
+  original.appendChild(ul);
+  replacebuttonwithmaininfo('pierwszego-maja-menu');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#pierwszego-maja-menu").onclick = function() {
+    pierwszego_maja_menu();
+  }
+});
+
+
+
+
+function pierwszego_maja_hours() {
+  const original = document.querySelector("#lorem-ipsum-2");
+  const maintext = document.createElement("p")
+  const ul = document.createElement("ul");
+  const li1 = document.createElement("li");
+  const li2 = document.createElement("li");
+  const li3 = document.createElement("li");
+  const li4 = document.createElement("li");
+  const li5 = document.createElement("li");
+  const li6 = document.createElement("li");
+  const li7 = document.createElement("li");
+
+  maintext.innerText = "Our Opening times (Including public holidays)are as follows:"
+  li1.innerText = ("Monday: 8AM-12AM")
+  li2.innerText = ("Tuesday: 8AM - 12AM")
+  li3.innerText = ("Wednesday:8AM - 12AM")
+  li4.innerText = ("Thursday: 8AM - 12AM")
+  li5.innerText = ("Friday: 8AM - 12AM")
+  li6.innerText = ("Saturday: 8AM - 12 AM")
+  li7.innerText = ("Sunday: Closed")
+
+  ul.appendChild(li1);
+  ul.appendChild(li2);
+  ul.appendChild(li3);
+  ul.appendChild(li4);
+  ul.appendChild(li5);
+  ul.appendChild(li6);
+  ul.appendChild(li7);
+
+  original.innerHTML = ""; // clear content using innerHTML
+  original.appendChild(maintext);
+  original.appendChild(ul);
+  replacebuttonwithmaininfo('pierwszego-maja-hours');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#pierwszego-maja-hours").onclick = function() {
+    pierwszego_maja_hours();
+  }
+});
+
+
+
+function pierwszego_maja_rating() {
+  const original = document.querySelector("#lorem-ipsum-2")
+  const maintext = document.createElement("p")
+  const review = document.createElement("p")
+
+  maintext.innerText = "Our restaurant was reviewed by 26 customers. The average review given, out of 5 is:"
+  review.innerText = "4.5"
+
+  original.innerHTML = "";
+  original.appendChild(maintext);
+  original.appendChild(review);
+  replacebuttonwithmaininfo('pierwszego-maja-rating');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#pierwszego-maja-rating").onclick = function() {
+    pierwszego_maja_rating();
+  }
+});
+
+
+
+
+function Kosciuszkimenu() {
+  const original = document.querySelector("#lorem-ipsum-3");
+  const maintext = document.createElement("p");
+  const ul = document.createElement("ul");
+  const li1 = document.createElement("li");
+  const li2 = document.createElement("li");
+
+  maintext.innerText = "In addition to the regular Psiakowo Menu, we have:";
+  li1.innerText = "Icecream";
+  li2.innerText = "Round dog biscuits";
+
+  ul.appendChild(li1);
+  ul.appendChild(li2);
+
+  original.innerHTML = ""; // clear content using innerHTML
+  original.appendChild(maintext);
+  original.appendChild(ul);
+  replacebuttonwithmaininfo('Kosciuszki-menu');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#Kosciuszki-menu").onclick = function() {
+    Kosciuszkimenu();
+  }
+});
+
+function Kosciuszkihours() {
+  const original = document.querySelector("#lorem-ipsum-3");
+  const maintext = document.createElement("p")
+  const ul = document.createElement("ul");
+  const li1 = document.createElement("li");
+  const li2 = document.createElement("li");
+  const li3 = document.createElement("li");
+  const li4 = document.createElement("li");
+  const li5 = document.createElement("li");
+  const li6 = document.createElement("li");
+  const li7 = document.createElement("li");
+
+  maintext.innerText = "Our Opening times (Including public holidays)are as follows:"
+  li1.innerText = ("Monday: 8AM-12AM")
+  li2.innerText = ("Tuesday: 8AM - 12AM")
+  li3.innerText = ("Wednesday:8AM - 12AM")
+  li4.innerText = ("Thursday: 8AM - 12AM")
+  li5.innerText = ("Friday: 8AM - 12AM")
+  li6.innerText = ("Saturday: 8AM - 12 AM")
+  li7.innerText = ("Sunday: Closed")
+
+  ul.appendChild(li1);
+  ul.appendChild(li2);
+  ul.appendChild(li3);
+  ul.appendChild(li4);
+  ul.appendChild(li5);
+  ul.appendChild(li6);
+  ul.appendChild(li7);
+
+  original.innerHTML = ""; // clear content using innerHTML
+  original.appendChild(maintext);
+  original.appendChild(ul);
+  replacebuttonwithmaininfo('Kosciuszki-hours');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#Kosciuszki-hours").onclick = function() {
+    Kosciuszkihours();
+  }
+});
+
+
+
+function Kosciuszkirating() {
+  const original = document.querySelector("#lorem-ipsum-3")
+  const maintext = document.createElement("p")
+  const review = document.createElement("p")
+
+  maintext.innerText = "Our restaurant was reviewed by 26 customers. The average review given, out of 5 is:"
+  review.innerText = "4.5"
+
+  original.innerHTML = "";
+  original.appendChild(maintext);
+  original.appendChild(review);
+  replacebuttonwithmaininfo('Kosciuszki-rating');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector("#Kosciuszki-rating").onclick = function() {
+    Kosciuszkirating();
+  }
+});
+
+
+
+
 function replacebuttonwithmaininfo(id) {
   const originalButton = document.getElementById(id);
   
