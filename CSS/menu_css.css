@@ -21,6 +21,7 @@ h1 {
   align-items: flex-start;
   text-align: center;
   min-width: 300px;
+  max-width: 1600px;
 }
 
 article {
@@ -53,4 +54,8 @@ article {
   font-size: 30px;
 }
 
-
+aside{
+  flex-basis: 25%; /* adjust this to your liking */
+  margin-left: 20px;
+  background-color: aqua;
+}
