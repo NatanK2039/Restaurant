@@ -26,7 +26,7 @@ function reviewsubmition() {
   var reviewmessage = document.getElementById("review").value;
 
   // Concatenate the variables together with newline characters in between
-  var message = "Name:" + customername + "\n" + "contact:" + contactdetails + "\n" + "review:" + reviewmessage + "\n";
+  var message = "Name:" + customername + "\n" + "Contact:" + contactdetails + "\n" + "Review:" + reviewmessage + "\n";
 
   // Display the concatenated message in the "currentreviews" element
   var currentreviews = document.getElementById("currentreviews");

@@ -6,8 +6,8 @@ function smolnamenu() {
   const li2 = document.createElement("li");
 
   maintext.innerText = "In addition to the regular Psiakowo Menu, we have:";
-  li1.innerText = "1 = 1";
-  li2.innerText = "2 = 2";
+  li1.innerText = "Hamburger";
+  li2.innerText = "Kebab";
 
   ul.appendChild(li1);
   ul.appendChild(li2);
