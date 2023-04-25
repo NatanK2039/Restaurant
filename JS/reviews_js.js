@@ -48,7 +48,6 @@ function setlocalstorage(contents) {
 }
 
 
-
 window.addEventListener("load", function() { //on load the road reviews function is called 
   loadreviews();
 });
