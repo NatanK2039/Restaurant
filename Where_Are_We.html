@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Psiakowo - Where Are We? </title>
-        <script src="./JS/Where_Are_We"></script>
-        <link rel = "stylesheet" href = "./CSS/Where_are_we_css.css">
-    </head>
+    <head> <!-- the head seaction is created -->
+        <title> Psiakowo - Where Are We? </title> <!-- the title is set -->
+        <script src="./JS/Where_Are_We"></script> <!-- the script pointer is set to the corresponding javascript file-->
+        <link rel = "stylesheet" href = "./CSS/Where_are_we_css.css"> <!-- the stylesheet is set ot the corresponding css file-->
+    </head><!-- the head section is closed-->
     
-    <header>
-        <h1>Psiakowo - Where are we?</h1>
-        <nav>
-            <button type="button" onclick="location.href='./index.html'">Main Page</button>
-            <button type="button" onclick="location.href='./Menu.html'">See Menu</button>
-            <button type="button" onclick="location.href='./reviews.html'">Reviews</button>
-        </nav>
-    </header>
+    <header> <!-- the header section is opened-->
+        <h1>Psiakowo - Where are we?</h1> <!-- the h1 text is added-->
+        <nav> <!-- the naviagation bar is opened -->
+            <button type="button" onclick="location.href='./index.html'">Main Page</button> <!-- the first button is created as a link to the main page-->
+            <button type="button" onclick="location.href='./Menu.html'">See Menu</button> <!-- the second button is created as a link to the menu page -->
+            <button type="button" onclick="location.href='./reviews.html'">Reviews</button><!-- the third button is created as a link to the reviews page -->
+        </nav> <!-- the navigation bar is closed -->
+    </header> <!-- the geader section is closed -->
 
-    <body>
-        <section id="locations">
-            <article id = "smolna">
-                <div id = "smolna-top">
-                    <p id = "lorem-ipsum-smolna">Lorem ipsum dolor sit amet,rerit turpis. e effellus nulla, viverra non neque non, consectetur accumsan mauris. Praesent maximus porta diam vel molestie. Aliquam sodales elit nibh, vel gravida tellus efficitur mattis.  </p>
-                    <img id = "smolna-image" src="./Images/Pies w Restauracji.jpg" alt="Dog with family">
-                </div>
+    <body> <!-- the body section is opened -->
+        <section id="locations"> <!-- the section element is created and given an id of locations-->
+            <article id = "smolna"> <!-- the article element is created and given an id of smolna-->
+                <div id = "smolna-top"> <!-- the div element is created and given an id of smollna-top-->
+                    <p id = "lorem-ipsum-smolna">Lorem ipsum dolor sit amet,rerit turpis. e effellus nulla, viverra non neque non, consectetur accumsan mauris. Praesent maximus porta diam vel molestie. Aliquam sodales elit nibh, vel gravida tellus efficitur mattis.  </p> <!-- the paragraph is created and text added-->
+                    <img id = "smolna-image" src="./Images/Pies w Restauracji.jpg" alt="Dog with family"> <!-- the image is created, given an id of smolna-image and pointed to the source -->
+                </div> <!-- the div is closed-->
                 
-                <div id="smolna-bottom">
-                    <button id="showsmolnamenu" onclick="smolnamenu(this)">Prices/Menu</button>
-                    <button id="showsmolnahours" onclick="smolnahours()">Opening-Hours</button>
-                    <button id="showsmolnarating" onclick="smolnarating()">Rating</button>
-                  </div>
-            </article>
+                <div id="smolna-bottom"> <!-- the div is opened -->
+                    <button id="showsmolnamenu" onclick="smolnamenu()">Prices/Menu</button> <!--the first button is created and when clicked it calls the smolnamenu function -->
+                    <button id="showsmolnahours" onclick="smolnahours()">Opening-Hours</button> <!-- the second button is created and when clicked it calls the smolnahours function-->
+                    <button id="showsmolnarating" onclick="smolnarating()">Rating</button> <!-- the third button is created and when clicked it calls the smolnarating function-->
+                  </div><!-- the div is closed -->
+            </article> <!-- the article is closed -->
+
+            <!-- all code below is identical to the code above with the only difference being the identifiers and contents of paragraphs. -->
 
             <article id = "pierwszego-maja">
                 <div id = "pierwszego-maja-top">
@@ -36,7 +38,7 @@
                     <img id = "pierwszego-maja-image" src="./Images/Psy przy stole.jpg" alt="Dogs at table">
                 </div> 
                 <div id = "pierwszego-maja-bottom">
-                    <button id="pierwszego-maja-menu" onclick="pierwszego_maja_menu(this)">Prices/Menu</button>
+                    <button id="pierwszego-maja-menu" onclick="pierwszego_maja_menu()">Prices/Menu</button>
                     <button id="pierwszego-maja-hours" onclick="pierwszego_maja_hours()">Opening-Hours</button>
                     <button id="pierwszego-maja-rating" onclick="pierwszego_maja_rating()">Rating</button>
                 </div>
@@ -48,7 +50,7 @@
                     <img id = "Kosciuszki-image" src="./Images/Pies z pizza.png" alt="Dog with pizza">
                 </div> 
                 <div id = "Kosciuszki-bottom">
-                    <button id="Kosciuszki-menu" onclick="Kosciuszkimenu(this)">Prices/Menu</button>
+                    <button id="Kosciuszki-menu" onclick="Kosciuszkimenu()">Prices/Menu</button>
                     <button id="Kosciuszki-hours" onclick="Kosciuszkihours()">Opening-Hours</button>
                     <button id="Kosciuszki-rating" onclick="Kosciuszkirating()">Rating</button>
                 </div>

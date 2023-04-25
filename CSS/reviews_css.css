@@ -1,59 +1,60 @@
 body {
-    background-image: url(../Images/Mur.jpg);
-    background-size: cover;
+    background-image: url(../Images/Mur.jpg); /* sets the background image */
+    background-size: cover; /* makes the image cover the full webpage */
 }
 
 nav {
-    text-align: center;
+    text-align: center; /* aligns the navigation bar to the center */
 
 }
 
 h1 {
-    font-size: 50px;
-    background-color: rgb(205, 255, 217);
-    text-align: center;
+    font-size: 50px; /*sets the font size of the text*/
+    background-color: rgb(205, 255, 217); /* sets the background color of the element */
+    text-align: center; /* aligns the text of the element to the center */
 }
 
+
 .container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    display: flex; /* allows for flexbox functionality */
+    flex-direction: row; /* sets the direction elements are spaced in */
+    justify-content: center; /* centers content horizontally  inside container */
+    align-items: center; /* aligns to center vertically */
 }
 
 
 article {
-    display: flex;
-    flex-direction: row;
-    padding: 5px;
-    padding-left: 100px;
-    padding-right: 100px;
+    display: flex; /* allows for flexbox functionality */
+    flex-direction: row;/* sets the direction elements are spaced in */
+    padding: 5px;/* padding is set */
+    padding-left: 100px; /* padding is set */
+    padding-right: 100px; /* padding is set */
 }
 
 .reviews {
-    background-color: aqua;
+    background-color: aqua;/* sets background color */
 }
 
 .input {
-    display: flex;
-    flex-direction: column;
-    max-width: 300px;
-    text-align: center;
-    margin-bottom: 1rem;
-    padding-left: 15px;
+    display: flex;/* allows for flexbox functionality */
+    flex-direction: column;/* sets the direction elements are spaced in */
+    max-width: 300px;/* max width is set */
+    text-align: center;/* aligns the text of the element to the center */
+    margin-bottom: 1rem; /*sets the bottom margin to */
+    padding-left: 15px; /* padding is set */
 
   }
   
   .input label {
-    margin-top: 25px;
-    margin-bottom: 0.5rem;
-    background-color: aqua;
-    max-width: 267px;
+    margin-top: 25px;/* margin is set */
+    margin-bottom: 0.5rem;/* margin is set relative to size of root element*/
+    background-color: aqua; /* background color is set */
+    max-width: 267px;/* max width is set */
   }
   
   .input input {
-    padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 25.25rem;
-    max-width: 250px;
+    padding: 0.5rem; /*padding is set relative to size of root element*/
+    border: 1px solid #ccc; /* border size and color is set */
+    border-radius: 25.25rem; /* border-radius is set relative to size of root element*/
+    max-width: 250px;/* max width is set */
   }

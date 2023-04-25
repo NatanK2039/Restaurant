@@ -1,21 +1,21 @@
 function smolnamenu() {
-  const original = document.querySelector("#lorem-ipsum-smolna");
-  const maintext = document.createElement("p");
-  const ul = document.createElement("ul");
-  const li1 = document.createElement("li");
-  const li2 = document.createElement("li");
+  const original = document.querySelector("#lorem-ipsum-smolna"); //the correct paragraph is selected for the original variable 
+  const maintext = document.createElement("p"); //a new paragraph element is created 
+  const ul = document.createElement("ul"); //a list element is created 
+  const li1 = document.createElement("li"); //a item element is created 
+  const li2 = document.createElement("li"); //a item element is created 
 
-  maintext.innerText = "In addition to the regular Psiakowo Menu, we have:";
-  li1.innerText = "Hamburger";
-  li2.innerText = "Kebab";
+  maintext.innerText = "In addition to the regular Psiakowo Menu, we have:"; //the paragraph element has text added 
+  li1.innerText = "Hamburger"; //the item element has text added 
+  li2.innerText = "Kebab"; //the item element has text added 
 
-  ul.appendChild(li1);
-  ul.appendChild(li2);
+  ul.appendChild(li1); //the item is appended to the list 
+  ul.appendChild(li2); // the item is appended to the list 
 
-  original.innerHTML = ""; // clear content using innerHTML
-  original.appendChild(maintext);
-  original.appendChild(ul);
-  replacebuttonwithmaininfo('showsmolnamenu');
+  original.innerHTML = ""; // content of the original variable is cleared 
+  original.appendChild(maintext); //the content of the original variable is updated with the content of maintext 
+  original.appendChild(ul); //the list is added below the content of mainteext
+  replacebuttonwithmaininfo('showsmolnamenu'); //the replace button function is called, this functions button id is passed 
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -27,10 +27,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function smolnahours() {
-  const original = document.querySelector("#lorem-ipsum-smolna");
-  const maintext = document.createElement("p")
-  const ul = document.createElement("ul");
-  const li1 = document.createElement("li");
+  const original = document.querySelector("#lorem-ipsum-smolna"); // the correct paragraph is selected for the original variable 
+  const maintext = document.createElement("p") //the maintext element is created 
+  const ul = document.createElement("ul"); //the list is created 
+  const li1 = document.createElement("li"); //the first item is created 
   const li2 = document.createElement("li");
   const li3 = document.createElement("li");
   const li4 = document.createElement("li");
@@ -38,8 +38,8 @@ function smolnahours() {
   const li6 = document.createElement("li");
   const li7 = document.createElement("li");
 
-  maintext.innerText = "Our Opening times (Including public holidays)are as follows:"
-  li1.innerText = ("Monday: 8AM-12AM")
+  maintext.innerText = "Our Opening times (Including public holidays)are as follows:" //text is added to the maintext
+  li1.innerText = ("Monday: 8AM-12AM") //the first item is assigned its text 
   li2.innerText = ("Tuesday: 8AM - 12AM")
   li3.innerText = ("Wednesday:8AM - 12AM")
   li4.innerText = ("Thursday: 8AM - 12AM")
@@ -47,7 +47,7 @@ function smolnahours() {
   li6.innerText = ("Saturday: 8AM - 12 AM")
   li7.innerText = ("Sunday: Closed")
 
-  ul.appendChild(li1);
+  ul.appendChild(li1); //the first item is appended to the list 
   ul.appendChild(li2);
   ul.appendChild(li3);
   ul.appendChild(li4);
@@ -55,10 +55,10 @@ function smolnahours() {
   ul.appendChild(li6);
   ul.appendChild(li7);
 
-  original.innerHTML = ""; // clear content using innerHTML
-  original.appendChild(maintext);
-  original.appendChild(ul);
-  replacebuttonwithmaininfo('showsmolnahours');
+  original.innerHTML = ""; // content is cleared 
+  original.appendChild(maintext); // content is replaced with content of maintext 
+  original.appendChild(ul); //list is added beneath 
+  replacebuttonwithmaininfo('showsmolnahours'); //replace button function called, this functions button id is passed 
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -71,17 +71,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function smolnarating() {
-  const original = document.querySelector("#lorem-ipsum-smolna")
-  const maintext = document.createElement("p")
-  const review = document.createElement("p")
+  const original = document.querySelector("#lorem-ipsum-smolna") //select the correct paragraph 
+  const maintext = document.createElement("p") //create maintext
+  const review = document.createElement("p") //create review
 
-  maintext.innerText = "Our restaurant was reviewed by 26 customers. The average review given, out of 5 is:"
-  review.innerText = "4.5"
+  maintext.innerText = "Our restaurant was reviewed by 26 customers. The average review given, out of 5 is:" //add text
+  review.innerText = "4.5" //add text
 
-  original.innerHTML = "";
-  original.appendChild(maintext);
-  original.appendChild(review);
-  replacebuttonwithmaininfo('showsmolnarating');
+  original.innerHTML = ""; //clear contents 
+  original.appendChild(maintext); //add contents of maintext
+  original.appendChild(review); //add contents of review
+  replacebuttonwithmaininfo('showsmolnarating'); //call function and pass this functions buttons id 
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -90,7 +90,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }
 });
 
-
+//all code below is the same as above 
 
 
 function pierwszego_maja_menu() {
@@ -281,17 +281,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 function replacebuttonwithmaininfo(id) {
-  const originalButton = document.getElementById(id);
+  const originalButton = document.getElementById(id); //original button is set to the id of the button that called the function calling the change button function
   
-  // create new button element
-  const newButton = document.createElement('button');
-  newButton.innerText = 'Main Info';
-  newButton.onclick = function() {
-    location.reload();
+  const newButton = document.createElement('button'); // new button is created 
+  newButton.innerText = 'Main Info'; // its text is set 
+  newButton.onclick = function() { //its function is set 
+    location.reload(); // reload page 
   };
   
-  // replace original button with new button
-  originalButton.parentNode.replaceChild(newButton, originalButton);
+  originalButton.parentNode.replaceChild(newButton, originalButton);   // original button is replaced with new button
 }
 
 

@@ -1,30 +1,32 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Psiakowo - Menu </title>
-        <link rel ="stylesheet" href = "./CSS/menu_css.css">
-    </head>
+    <head> <!-- the head section is created -->
+        <title> Psiakowo - Menu </title> <!-- the title is set -->
+        <link rel ="stylesheet" href = "./CSS/menu_css.css"> <!-- the stylesheet location is shown by the link-->
+    </head> <!--the head is closed -->
 
-    <header>
-        <h1> Psiakowo - Menu</h1>
-        <nav>
-            <button type="button" onclick="location.href='./index.html'">Main Page </button>
-            <button type="button" onclick="location.href='./Where_Are_We.html'">Where Are We?</button>
-            <button type="button" onclick="location.href='./reviews.html'">Reviews</button>
-        </nav>   
-    </header>
+    <header> <!-- the header is opened-->
+        <h1> Psiakowo - Menu</h1> <!-- the h1 element is created and the text inserted -->
+        <nav> <!-- the navigation bar is created -->
+            <button type="button" onclick="location.href='./index.html'">Main Page </button> <!-- the first button is created as a link to the main page -->
+            <button type="button" onclick="location.href='./Where_Are_We.html'">Where Are We?</button> <!-- the second button is created as a link to the where are we page -->
+            <button type="button" onclick="location.href='./reviews.html'">Reviews</button> <!-- the third button is created as a link to the reviews page -->
+        </nav> <!-- the navigation bar is closed-->
+    </header> <!-- the header section is closed -->
 
-    <body>
-        <container class = "container">
-            <article id="pierogi">
-                <a href="./FoodPages/Pierogi.html">
-                  <div>
-                    <img class="foodimage" src="./Images/Food/Pierogi.jpeg" alt="Image of Pierogi Ruskie">
-                    <p class="foodtitle">Pierogi</p>
-                  </div>
-                </a>
-              </article>
+    <body> <!-- the body section is created -->
+        <container class = "container"> <!-- the container element is created and given a class of container -->
+            <article id="pierogi"> <!-- the article element is created and given an id of pierogi -->
+                <a href="./FoodPages/Pierogi.html"> <!-- this sets the following section as a link to the pierogi subpage-->
+                  <div> <!-- the div element is created -->
+                    <img class="foodimage" src="./Images/Food/Pierogi.jpeg" alt="Image of Pierogi Ruskie"> <!-- this creates an image with the class of foodimage and sets its source -->
+                    <p class="foodtitle">Pierogi</p> <!-- this creates the paragraph element and enters its text -->
+                  </div> <!-- the div is closed -->
+                </a> <!-- the link area is closed -->
+              </article> <!-- the article is closed -->
             
+            <!-- all code after this point is identical to the above, with only the user displayed content being changed -->
+
             <article id = "zupa">
                 <a href = "./FoodPages/Soups.html">
                 <div>
@@ -71,9 +73,5 @@
             </article>
         </container>
 
-
-
-
-
-    </body>
-<html>
+    </body> <!-- the body section is closed -->
+</html> <!-- the html section is closed -->

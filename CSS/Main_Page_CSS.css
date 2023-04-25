@@ -1,59 +1,58 @@
 body {
-    background-image: url(../Images/Mur.jpg);
-    background-size: cover;
+    background-image: url(../Images/Mur.jpg); /* sets the background image */
+    background-size: cover; /* makes the image cover the full webpage */
 }
 
 nav {
-    text-align: center;
+    text-align: center; /* aligns the navigation bar to the center */
 
 }
 
 h1 {
-    font-size: 50px;
-    background-color: rgb(205, 255, 217);
-    text-align: center;
+    font-size: 50px; /*sets the font size of the text*/
+    background-color: rgb(205, 255, 217); /* sets the background color of the element */
+    text-align: center; /* aligns the text of the element to the center */
 }
 
 .dog-with-family {
-    width: 400px;
-    float: left;
-    position: absolute;
-    right: 500px;
-    border-radius: 3%;
-    margin-top: 10px;
-    margin-right: 40px;
-    object-fit: cover;
+    width: 400px; /* sets the width */
+    position: absolute; /* allows full control over the position of the element */
+    right: 500px; /* sets the distance from the right of its container */
+    border-radius: 3%; /* curves the edges of the image */
+    margin-top: 10px; /* sets margin */
+    margin-right: 40px; 
+    object-fit: cover; /* lets it cover its container */
 }
 
 .history {
-    font-weight: bold;
+    font-weight: bold; /* sets bold font weight */
 }
 
 #history-text-and-img-div{
-    width: 500px;
-    height: 50px;
-    position: absolute;
-    left: 650px;
+    width: 500px; /*sets width */
+    height: 50px; /*sets height*/
+    position: absolute; /* allows for control over position */
+    left: 650px; /* distance from left */
 }
 
 #main{
-    padding-top: 100px;
-    padding-left: 150px;
+    padding-top: 100px; /* sets padding to the top */
+    padding-left: 150px; /* sets padding to the left */
 }
 
 aside{
-    position: absolute;
-    left: 1200px;
-    background-color: aqua;
+    position: absolute; /* allows for control over position */
+    left: 1200px; /* sets distance from left */
+    background-color: aqua; /*sets background color */
 }
 
 .short-menu-title{
-    font-size: 25px;
-    font-weight: bold;
-    position: relative;
+    font-size: 25px; /*sets font size */
+    font-weight: bold; /* sets font weight */
+    position: relative; /* sets position to be relative of its default position */
     right: 25px;
 }
 
 #text {
-    background-color: aqua;
+    background-color: aqua; /* background color of text is added */
 }

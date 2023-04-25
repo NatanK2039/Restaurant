@@ -1,62 +1,62 @@
 body {
-    background-image: url(../Images/Mur.jpg);
-    background-size: cover;
+    background-image: url(../Images/Mur.jpg); /* sets the background image */
+    background-size: cover; /* makes the image cover the full webpage */
 }
 
 nav {
-    text-align: center;
+    text-align: center; /* aligns the navigation bar to the center */
 
 }
 
 h1 {
-    font-size: 50px;
-    background-color: rgb(205, 255, 217);
-    text-align: center;
+    font-size: 50px; /*sets the font size of the text*/
+    background-color: rgb(205, 255, 217); /* sets the background color of the element */
+    text-align: center; /* aligns the text of the element to the center */
 }
 
 #locations {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex: 1;
+    display: flex; /* creates flexbox functionality */
+    flex-direction: row;/* sets the direction elements are spaced in */
+    flex-wrap: wrap;/* allows to wrap onto next lines when continainer is too small */
+    flex: 1;/*This dictates the priority of how much available space can be given. assuming three articles have 1-1-2 priority, then 1+1+2=4 meaning that eaach article with a priority of 1 will take up 1/4 of thee available space, and the largest article, with a priority of 2, will take up 2/4 of the available space. */
     /* A shortcut exists for this the last 2 lines. flex-flow: row wrap; */
 }
 
 #smolna {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
+    display: flex;/* creates flexbox functionality */
+    flex-direction: column;/* sets the direction elements are spaced in */
+    flex-wrap: wrap;/* allows to wrap onto next lines when continainer is too small */
     flex: 1; /*This dictates the priority of how much available space can be given. assuming three articles have 1-1-2 priority, then 1+1+2=4 meaning that eaach article with a priority of 1 will take up 1/4 of thee available space, and the largest article, with a priority of 2, will take up 2/4 of the available space. */
 }
 
 #smolna-top{
-    display: flex;
-    flex: 1 100px;
-    flex-flow: row;
-    flex-direction: row;
-    background-color: aqua;
+    display: flex;/* creates flexbox functionality */
+    flex: 1 100px; /* sets size relative to other elements */
+    flex-flow: row; /* sets the flex-direction as well as flex-wrap to row*/
+    background-color: aqua; /*sets the background color */
 }
 
 #smolna-image{
-    width: 200px;
-    height: 200px;
+    width: 200px; /*sets width */
+    height: 200px; /*sets height */
 
 }
 
 #smolna-bottom{
-    display: flex;
-    justify-content: space-evenly;
-    flex-flow: row; 
+    display: flex; /* creates flexbox functionality */
+    justify-content: space-evenly; /* equally places the elements using the full container length */
+    flex-flow: row; /* sets the flex-direction as well as flex-wrap to row*/
 
 
 }
 
+/* all below code is the same as above */
 
 #pierwszego-maja {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 1; /*This dictates the priority of how much available space can be given. assuming three articles have 1-1-2 priority, then 1+1+2=4 meaning that eaach article with a priority of 1 will take up 1/4 of thee available space, and the largest article, with a priority of 2, will take up 2/4 of the available space. */
+    flex: 1; 
 }
 
 #pierwszego-maja-top{
@@ -84,7 +84,7 @@ h1 {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    flex: 1; /*This dictates the priority of how much available space can be given. assuming three articles have 1-1-2 priority, then 1+1+2=4 meaning that eaach article with a priority of 1 will take up 1/4 of thee available space, and the largest article, with a priority of 2, will take up 2/4 of the available space. */
+    flex: 1; 
 }
 
 #Kosciuszki-top{
@@ -109,7 +109,7 @@ h1 {
 
 
 article {
-    flex: 200px; /*the relevant articles will be AT LEAST 200 px wide.*/
+    flex: 200px; 
     padding: 10px;
     margin: 10px;
     background: aqua;

@@ -1,43 +1,43 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title> Psiakowo - Reviews </title>
-        <script src="./JS/reviews_js.js"></script>
-        <link rel="stylesheet" href="./CSS/reviews_css.css">
-    </head>
+    <head> <!-- the head section is created -->
+        <title> Psiakowo - Reviews </title> <!-- the title is set -->
+        <script src="./JS/reviews_js.js"></script> <!-- the script source is set -->
+        <link rel="stylesheet" href="./CSS/reviews_css.css"> <!-- the css source is set -->
+    </head> <!-- the head section is closed -->
     
-    <header>
-        <h1>Psiakowo - Reviews</h1>
-        <nav>
-            <button type="button" onclick="location.href='./index.html'">Main Page</button>
-            <button type="button" onclick="location.href='./Where_Are_We.html'">Where Are We?</button>
-            <button type="button" onclick="location.href='./Menu.html'">See Menu</button>
-        </nav>
-    </header>
+    <header> <!-- the header section is opened -->
+        <h1>Psiakowo - Reviews</h1> <!-- the h1 element is created and the text is inserted -->
+        <nav> <!-- the navigaton bar is created -->
+            <button type="button" onclick="location.href='./index.html'">Main Page</button> <!-- the first button is created as a link to the index page -->
+            <button type="button" onclick="location.href='./Where_Are_We.html'">Where Are We?</button> <!-- the second button is created as a link to the where are we page -->
+            <button type="button" onclick="location.href='./Menu.html'">See Menu</button> <!-- the third button is created as a link to the menu page -->
+        </nav> <!-- the navigation bar is closed-->
+    </header> <!-- the header section is closed -->
 
-    <body>
-        <div class="container">
-            <article>
-                <div class="reviews">
-                    <h2>Our Current Reviews:</h2>
-                    <p id = "currentreviews"></p>
-                </div>
-            </article>
-            <article>
-                <div class="input">
-                    <label for="customername">Enter your name:</label>
-                    <input type="textarea" id="customername" name="customername">
+    <body>  <!-- the body section is created -->
+        <div class="container"> <!-- the div is created and given a class of container-->
+            <article> <!-- the article is created -->
+                <div class="reviews"> <!-- the div is created and given a class of reviews -->
+                    <h2>Our Current Reviews:</h2> <!-- the h2 element is created and the text is inserted -->
+                    <p id = "currentreviews"></p> <!-- the paragraph is created and the text is inserted -->
+                </div> <!-- the div is closed-->
+            </article> <!-- the article is closed -->
+            <article> <!-- the article is opened -->
+                <div class="input"> <!-- the div is created and given a class of input -->
+                    <label for="customername">Enter your name:</label> <!-- a label for the input field is created -->
+                    <input type="textarea" id="customername" name="customername"> <!-- the input field is created, given an id of customer name, and field name of customername -->
 
-                    <label for="contact">Enter your contact details (Optional)</label>
-                    <input type="textarea" id="contact" name="contact-details">
+                    <label for="contact">Enter your contact details (Optional)</label> <!-- the label for the input field is created -->
+                    <input type="textarea" id="contact" name="contact-details"> <!-- the input field is created, given an id of contact and a field name of contact-details -->
                     
-                    <label for="review">Enter your review</label>
-                    <input type="textarea" id="review" name="reviewmessage">
-                    <button type="button" onclick="reviewsubmition()">Submit</button>
-                </div>
-            </article>
-        </div>
+                    <label for="review">Enter your review</label> <!-- the label for the input field is created -->
+                    <input type="textarea" id="review" name="reviewmessage"> <!-- the input field is created, given an id of review, and a field name of reviewmessage-->
+                    <button type="button" onclick="reviewsubmition()">Submit</button> <!-- the submit button is created, which calls the reviewssubmition function-->
+                </div> <!-- the div is closed-->
+            </article> <!-- article is closed -->
+        </div> <!-- the div is closed -->
 
-    </body>
+    </body> <!-- the body section is closed -->
 
 </html>
