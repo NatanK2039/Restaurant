@@ -59,3 +59,12 @@ aside{
   margin-left: 20px; /*sets margin */
   background-color: aqua; /* sets background color */
 }
+
+table, th, td {
+  border:1px solid black;
+}
+
+.your_choices{
+  display: grid;
+  justify-content: center;
+}

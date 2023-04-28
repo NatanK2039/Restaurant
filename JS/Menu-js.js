@@ -2,12 +2,57 @@ let total_cost = 0;
 let total_calories = 0;
 
 function drinksselected() {
-  appendtext("Drinks", 20, 50)
+  appendtext("Cocktails", 7,110 )
   saveTableToLocalStorage()
 }
 
 function wodkaselected() {
-  appendtext("Wodka", 30, 30)
+  appendtext("Wodka", 20, 230)
+  saveTableToLocalStorage()
+}
+
+function tiramisuselected() {
+  appendtext("Tiramisu", 7, 500)
+  saveTableToLocalStorage()
+}
+
+function karpatkaselected() {
+  appendtext("Karpatka", 6, 300)
+  saveTableToLocalStorage()
+}
+
+function juiceselected() {
+  appendtext("Juice", 4, 60)
+  saveTableToLocalStorage()
+}
+
+function tymbarkselected() {
+  appendtext("Tymbark", 5, 45)
+  saveTableToLocalStorage()
+}
+
+function schabselected() {
+  appendtext("Schab", 15, 1200)
+  saveTableToLocalStorage()
+}
+
+function bigosselected() {
+  appendtext("Bigos", 10, 400)
+  saveTableToLocalStorage()
+}
+
+function zurekselected() {
+  appendtext("Zurek", 13, 350) 
+  saveTableToLocalStorage()
+}
+
+function pierogiruskieselected() {
+  appendtext("Pierogi Ruskie", 15, 500)
+  saveTableToLocalStorage()
+}
+
+function pierogikapustaselected() {
+  appendtext("Pierogi with cabbage", 15, 500)
   saveTableToLocalStorage()
 }
 
@@ -38,7 +83,7 @@ function appendtext(choicesText, costText, caloriesText) {
   // Add a click event listener to the new row that removes it when clicked
   newRow.addEventListener("click", function() {
     this.parentNode.removeChild(this);
-    setlocalstorage()
+    saveTableToLocalStorage()
   });
 
   // Append the new row element to the table element

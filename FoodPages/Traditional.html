@@ -2,7 +2,7 @@
 <html>
     <head>
         <title> Psiakowo - Traditional Dinners </title>
-        <script src="./JS/Where_Are_We"></script>
+        <script src="../JS/Menu-js.js""></script>
         <link rel = "stylesheet" href = "./Food_css.css">
     </head>
     
@@ -18,19 +18,31 @@
 
     <body>
         <container class = "container">
-            <article id="Schab">
+            <article id="Schab" onclick="schabselected()">
                   <div>
                     <img class="foodimage" src="../Images/Food/Schab.jpg" alt="Image of Alcoholic Drinks">
                     <p class="foodtitle">Schab</p>
                   </div>
             </article>
     
-            <article id="Bigos">
+            <article id="Bigos" onclick = "bigosselected()">
                 <div>
                   <img class="foodimage" src="../Images/Food/Bigos.jpg" alt="Image of Alcoholic Drink">
                   <p class="foodtitle">Bigos</p>
                 </div>
           </article>
+          <article> 
+            <div id = "your_choices">
+                    <h3>Your choices:</h3> 
+                    <table>
+                      <tr>
+                        <th>choices</th>
+                        <th>cost</th>
+                        <th>calories</th>
+                      </tr>
+                    </table>
+            </div>
+        </article>
     
     
     
