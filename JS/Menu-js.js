@@ -77,7 +77,6 @@ function saveTableToLocalStorage() {
 }
 
 
-
 function loadTableFromLocalStorage() {
   // Get the table element
   const table = document.querySelector('table');
@@ -96,9 +95,17 @@ function loadTableFromLocalStorage() {
         newRow.appendChild(newCell);
       });
       table.appendChild(newRow);
+      newRow.addEventListener("click", (event) => {
+        if (event.target.tagName === "TD") {
+          const row = event.target.parentNode;
+          row.parentNode.removeChild(row);
+          saveTableToLocalStorage();
+        }
+      });
     });
   }
 }
+
 
 // Add an event listener to call the loadTableFromLocalStorage function when the page is loaded
 window.addEventListener('load', loadTableFromLocalStorage);
