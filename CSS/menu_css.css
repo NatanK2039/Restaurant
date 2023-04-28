@@ -64,7 +64,7 @@ table, th, td {
   border:1px solid black;
 }
 
-.your_choices{
+#your_choices{
   display: grid;
   justify-content: center;
 }

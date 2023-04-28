@@ -7,7 +7,7 @@ function drinksselected() {
 }
 
 function wodkaselected() {
-  appendtext("Wodka", 20, 230)
+  appendtext("vodka", 20, 230)
   saveTableToLocalStorage()
 }
 
@@ -166,6 +166,8 @@ function removeTableRow() {
   });
   saveTableToLocalStorage()
 }
+
+
 
 
 //   const choices = document.querySelectorAll('.choice');
