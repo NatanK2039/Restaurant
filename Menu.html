@@ -3,6 +3,7 @@
     <head> <!-- the head section is created -->
         <title> Psiakowo - Menu </title> <!-- the title is set -->
         <link rel ="stylesheet" href = "./CSS/menu_css.css"> <!-- the stylesheet location is shown by the link-->
+        <script src="./JS/Menu-js.js"></script> <!-- the script pointer is set to the corresponding javascript file-->        
     </head> <!--the head is closed -->
 
     <header> <!-- the header is opened-->
@@ -15,7 +16,7 @@
     </header> <!-- the header section is closed -->
 
     <body> <!-- the body section is created -->
-        <container class = "container"> <!-- the container element is created and given a class of container -->
+        <section class = "container"> <!-- the container element is created and given a class of container -->
             <article id="pierogi"> <!-- the article element is created and given an id of pierogi -->
                 <a href="./FoodPages/Pierogi.html"> <!-- this sets the following section as a link to the pierogi subpage-->
                   <div> <!-- the div element is created -->
@@ -64,7 +65,7 @@
                 </a>
             </article>
 
-            <article id = "alcohol">
+            <article id = "alcohol" ">
                 <a href="./FoodPages/Alcoholic.html">
                     <div>
                         <img class = "foodimage" src="./Images/Food/Alkohol.jpg" alt="Image of Pierogi Ruskie">
@@ -72,7 +73,19 @@
                     </div>
                 </a>
             </article>
-        </container>
+            <article> 
+                <div id = "Your-choices">
+                        <h3>Your choices:</h3> 
+                        <p id = "choices">
+
+                        </p>
+                </div>
+            </article>
+
+        </section>
+
+
+
 
     </body> <!-- the body section is closed -->
 </html> <!-- the html section is closed -->

@@ -33,6 +33,12 @@ h1 {
     background-color: aqua;
   }
   
+.choicecontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
   @media screen and (max-width: 768px) {
     article {
       flex-basis: 50%;
@@ -52,4 +58,8 @@ h1 {
   
   .foodtitle {
     font-size: 30px;
+  }
+
+  table, th, td {
+    border:1px solid black;
   }

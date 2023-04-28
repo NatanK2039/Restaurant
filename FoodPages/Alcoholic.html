@@ -2,8 +2,8 @@
 <html>
     <head>
         <title> Psiakowo - Alcoholic Drinks </title>
-        <script src="./JS/Where_Are_We"></script>
         <link rel = "stylesheet" href = "./Food_css.css">
+        <script src="../JS/Menu-js.js"></script>
     </head>
     
     <header>
@@ -16,24 +16,34 @@
     </header>
 
     <body>
-    <container class = "container">
-        <article id="Drinks">
+      <section class = "container">
+          <article id="Drinks"onclick="drinksselected()"  >
+                <div>
+                  <img class="foodimage" src="../Images/Food/Alkohol.jpg" alt="Image of Alcoholic Drinks">
+                  <p class="foodtitle">Drinks</p>
+                </div>
+          </article>
+
+          <article id="Wodka"onclick="wodkaselected()">
               <div>
-                <img class="foodimage" src="../Images/Food/Alkohol.jpg" alt="Image of Alcoholic Drinks">
-                <p class="foodtitle">Drinks</p>
+                <img class="foodimage" src="../Images/Food/Vodka.jpg" alt="Image of Alcoholic Drink">
+                <p class="foodtitle">Wodka</p>
               </div>
         </article>
-
-        <article id="Wodka">
-            <div>
-              <img class="foodimage" src="../Images/Food/Vodka.jpg" alt="Image of Alcoholic Drink">
-              <p class="foodtitle">Wodka</p>
-            </div>
+        <article> 
+          <div id = "Your-choices">
+                  <h3>Your choices:</h3> 
+                  <table>
+                    <tr>
+                      <th>choices</th>
+                      <th>cost</th>
+                      <th>calories</th>
+                    </tr>
+                  </table>
+          </div>
       </article>
-
-
-
-
-
-    </container>
+      </section>
     </body>
+
+
+    
