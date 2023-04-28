@@ -11,14 +11,16 @@ function wodkaselected() {
   saveTableToLocalStorage()
 }
 
+let rowCount = 1; // initialize row count variable
+
 function appendtext(choicesText, costText, caloriesText) {
   // Get a reference to the table element
   const table = document.querySelector("table");
 
-  // Create a new row element
+  // Create a new row element and set its ID to the current row count
   const newRow = document.createElement("tr");
 
-  // Create three new cell elements
+  // Create three new cell elements for the choices, cost, and calories data
   const choicesCell = document.createElement("td");
   const costCell = document.createElement("td");
   const caloriesCell = document.createElement("td");
@@ -33,9 +35,17 @@ function appendtext(choicesText, costText, caloriesText) {
   newRow.appendChild(costCell);
   newRow.appendChild(caloriesCell);
 
+  // Add a click event listener to the new row that removes it when clicked
+  newRow.addEventListener("click", function() {
+    this.parentNode.removeChild(this);
+    setlocalstorage()
+  });
+
   // Append the new row element to the table element
   table.appendChild(newRow);
 }
+
+
 
 
 function saveTableToLocalStorage() {

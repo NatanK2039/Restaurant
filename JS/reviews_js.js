@@ -49,9 +49,9 @@ function setlocalstorage(contents) {
   }
 }
 
-// window.addEventListener("load", function() {
-//   clear();
-// });
+window.addEventListener("load", function() {
+  clear();
+});
 
 window.addEventListener("load", function() {
   loadreviews();
