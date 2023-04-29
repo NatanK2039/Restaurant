@@ -115,14 +115,7 @@ article {
     background: aqua;
 }
 
-@media screen and (max-width: 768px) {
-    article {
-      flex-basis: 50%;
-    }
-  }
-  
-  @media screen and (max-width: 480px) {
-    article {
-      flex-basis: 100%;
-    }
-  }
+
+
+
+
