@@ -60,15 +60,14 @@ function loadreviews() {
 }
 
 function securitycheck(message) {
-
-  if (/^[a-zA-Z0-9]+$/.test(message) && message.length <= 500) {
-    alert(message.length)
-        return true;
+  if (/^[a-zA-Z0-9\s:]+$/.test(message) && message.length <= 500) {
+    return true;
   } else {
     alert("Ensure that the message has less than 500 characters, and only letters and numbers are used.");
     return false;
   }
 }
+
 
 // function clear() {
 //   localStorage.clear();
