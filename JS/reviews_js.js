@@ -1,3 +1,6 @@
+
+
+
 function storageavailable(type) { //exact copy from source.lab09 - data + persistance
   try {
     var storage = window[type];
@@ -22,6 +25,10 @@ function reviewsubmition() {
   var contactdetails = document.getElementById("contact").value; //the correct input field is found 
   var reviewmessage = document.getElementById("review").value; //the correct input field is found 
   var message = "Name:" + customername + "\n" + "Contact:" + contactdetails + "\n" + "Review:" + reviewmessage + "\n"; //message concatonated 
+  secure = securitycheck(message)
+  if (!secure) {
+    return
+  }
   var currentreviews = document.getElementById("currentreviews"); //the paragraph element is found 
   currentreviews.innerHTML += message + "<br>"; //the paragraph element is altered to contain the message 
   setlocalstorage(message)// the setlocal storage function is called and the message is passed
@@ -40,7 +47,6 @@ function setlocalstorage(contents) {
   }
 }
 
-
 window.addEventListener("load", function() { //on load the road reviews function is called 
   loadreviews();
 });
@@ -52,6 +58,26 @@ function loadreviews() {
     currentreviews.innerText = content; // the paragraph is updated with the content 
   }
 }
+
+function securitycheck(message) {
+
+  if (/^[a-zA-Z0-9]+$/.test(message) && message.length <= 500) {
+    alert(message.length)
+        return true;
+  } else {
+    alert("Ensure that the message has less than 500 characters, and only letters and numbers are used.");
+    return false;
+  }
+}
+
+// function clear() {
+//   localStorage.clear();
+// }
+
+// window.addEventListener("load", function() { //on load the road reviews function is called 
+//   clear();
+// });
+
 // function updatefile() {
 //   const owner = "NatanK2039";
 //   const repo = "NatanK2039/Restaurant";
