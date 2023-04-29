@@ -39,6 +39,8 @@ function setlocalstorage(contents) {
     alert("Local Storage is not available, the review was not saved") //if local storage is not available then the user is alerted that their review was not submitted 
   }
 }
+
+
 window.addEventListener("load", function() { //on load the road reviews function is called 
   loadreviews();
 });
