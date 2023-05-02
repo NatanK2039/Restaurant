@@ -61,10 +61,10 @@ aside{
 }
 
 table, th, td {
-  border:1px solid black;
+  border:1px solid black; /* sets border for table and its contents */
 }
 
 #your_choices{
-  display: grid;
-  justify-content: center;
+  display: grid; /* sets the layout of the your_choices box*/
+  justify-content: center; /* centers to the center of container*/
 }

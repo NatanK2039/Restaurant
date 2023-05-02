@@ -1,3 +1,4 @@
+
 body {
     background-image: url(../Images/Mur.jpg); /* sets the background image */
     background-size: cover; /* makes the image cover the full webpage */
@@ -14,45 +15,44 @@ h1 {
     text-align: center; /* aligns the text of the element to the center */
 }
 
+.container {
+    display: flex; /* allows for flexbox functionality */
+    flex-direction: row; /* sets the direction elements are spaced in */
+    justify-content: center; /* centers content horizontally  inside container */
+    align-items: center; /* aligns to center vertically */
+}
+
+
+article {
+    display: flex; /* allows for flexbox functionality */
+    flex-direction: row;/* sets the direction elements are spaced in */
+    padding: 5px;/* padding is set */
+    padding-left: 100px; /* padding is set */
+    padding-right: 100px; /* padding is set */
+    margin: 20px;
+    color: white;
+    min-width: 200px;
+}
+
 .dog-with-family {
     width: 400px; /* sets the width */
-    position: absolute; /* allows full control over the position of the element */
-    right: 500px; /* sets the distance from the right of its container */
     border-radius: 3%; /* curves the edges of the image */
     margin-top: 10px; /* sets margin */
     margin-right: 40px; 
     object-fit: cover; /* lets it cover its container */
 }
 
-.history {
-    font-weight: bold; /* sets bold font weight */
-}
 
-#history-text-and-img-div{
-    width: 500px; /*sets width */
-    height: 50px; /*sets height*/
-    position: absolute; /* allows for control over position */
-    left: 650px; /* distance from left */
-}
-
-#main{
-    padding-top: 100px; /* sets padding to the top */
-    padding-left: 150px; /* sets padding to the left */
-}
-
-aside{
-    position: absolute; /* allows for control over position */
-    left: 1200px; /* sets distance from left */
-    background-color: aqua; /*sets background color */
-}
-
-.short-menu-title{
-    font-size: 25px; /*sets font size */
-    font-weight: bold; /* sets font weight */
-    position: relative; /* sets position to be relative of its default position */
-    right: 25px;
-}
-
-#text {
-    background-color: aqua; /* background color of text is added */
-}
+@media screen and (max-width: 768px) {/* targets the media  screen if it has a max width of 768 */
+    article {
+      flex-direction: column; /* sets the direction elements are spaced in */
+      padding-left: 20px; /* padding is set */
+      padding-right: 20px;/* padding is set */
+    }
+  }
+  
+  @media screen and (max-width: 480px) { /* targets the media  screen if it has a max width of 480 */
+    article {
+      flex-basis: 100%; /*distributes space evenly between articles */
+    }
+  }
