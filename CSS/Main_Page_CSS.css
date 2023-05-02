@@ -30,8 +30,8 @@ article {
     padding-left: 100px; /* padding is set */
     padding-right: 100px; /* padding is set */
     margin: 20px;
-    color: white;
     min-width: 200px;
+    background-color: aqua;
 }
 
 .dog-with-family {
