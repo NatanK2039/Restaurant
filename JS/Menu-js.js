@@ -1,11 +1,11 @@
 let total_cost = 0;
 let total_calories = 0;
 
-function drinksselected() {
-  appendtext("Cocktails", 7,110 )
-  saveTableToLocalStorage()
+function drinksselected() { 
+  appendtext("Cocktails", 7,110 ) //appendtext function is called with the appropriate parameters
+  saveTableToLocalStorage() //save to local storage function is called with appropriate parameters
 }
-
+//many functions below are the same as above
 function wodkaselected() {
   appendtext("vodka", 20, 230)
   saveTableToLocalStorage()
@@ -59,34 +59,29 @@ function pierogikapustaselected() {
 let rowCount = 1; // initialize row count variable
 
 function appendtext(choicesText, costText, caloriesText) {
-  // Get a reference to the table element
-  const table = document.querySelector("table");
+  const table = document.querySelector("table"); //find table element
 
-  // Create a new row element and set its ID to the current row count
-  const newRow = document.createElement("tr");
+  const newRow = document.createElement("tr"); //create row
 
-  // Create three new cell elements for the choices, cost, and calories data
-  const choicesCell = document.createElement("td");
-  const costCell = document.createElement("td");
-  const caloriesCell = document.createElement("td");
+  const choicesCell = document.createElement("td"); //create field
+  const costCell = document.createElement("td"); //create field
+  const caloriesCell = document.createElement("td"); //create field 
 
-  // Set the text content of each cell to the corresponding parameter value
-  choicesCell.textContent = choicesText;
-  costCell.textContent = costText;
-  caloriesCell.textContent = caloriesText;
+  choicesCell.textContent = choicesText; //set text of field 
+  costCell.textContent = costText; //set text of field 
+  caloriesCell.textContent = caloriesText; //set text of field 
 
-  // Append the new cells to the new row element
-  newRow.appendChild(choicesCell);
-  newRow.appendChild(costCell);
-  newRow.appendChild(caloriesCell);
+  newRow.appendChild(choicesCell); //append field to row
+  newRow.appendChild(costCell); //append field to row
+  newRow.appendChild(caloriesCell); //append field to row
 
-  // Add a click event listener to the new row that removes it when clicked
+  // event listener - rows are removed when clicked 
   newRow.addEventListener("click", function() {
     this.parentNode.removeChild(this);
     saveTableToLocalStorage()
   });
 
-  // Append the new row element to the table element
+  // Append row element to the table 
   table.appendChild(newRow);
 }
 
@@ -94,54 +89,49 @@ function appendtext(choicesText, costText, caloriesText) {
 
 
 function saveTableToLocalStorage() {
-  // Get the table element
-  const table = document.querySelector('table');
 
-  // Get the rows of the table (excluding the header row)
-  const rows = Array.from(table.querySelectorAll('tr')).slice(1);
+  const table = document.querySelector('table'); //find table
 
-  // Create an array to hold the table data
-  const data = [];
 
-  // Get the column headings from the table header
-  const columnHeadings = Array.from(table.querySelectorAll('th')).map(th => th.textContent);
+  const rows = Array.from(table.querySelectorAll('tr')).slice(1); //get each row (except the header row)
 
-  // Loop through the rows and extract the data from each cell
-  rows.forEach(row => {
-    const cells = Array.from(row.querySelectorAll('td'));
-    const rowData = {};
-    cells.forEach((cell, index) => {
-      const heading = columnHeadings[index];
-      rowData[heading] = cell.textContent;
+  const data = []; //create array to store data
+
+  const columnHeadings = Array.from(table.querySelectorAll('th')).map(th => th.textContent); //get column headings from header row
+
+  // Loop through rows and extract data from each field
+  rows.forEach(row => { //for each row
+    const cells = Array.from(row.querySelectorAll('td')); //find fields 
+    const rowData = {}; //create array 
+    cells.forEach((cell, index) => { //for each field/cell
+      const heading = columnHeadings[index]; // get heading from columnHeadings created previously
+      rowData[heading] = cell.textContent; // get the row data under that heading
     });
-    data.push(rowData);
+    data.push(rowData); //add to rowdata
   });
 
   // Save the data to Local Storage
-  localStorage.setItem('tableData', JSON.stringify(data));
+  localStorage.setItem('tableData', JSON.stringify(data)); //save in Json
 }
 
 
 function loadTableFromLocalStorage() {
-  // Get the table element
-  const table = document.querySelector('table');
+  const table = document.querySelector('table'); //find table
 
-  // Get the data from Local Storage
-  const dataString = localStorage.getItem('tableData');
+  const dataString = localStorage.getItem('tableData'); //find data in local storage
 
-  // If there is data, parse it and add it to the table
-  if (dataString) {
-    const data = JSON.parse(dataString);
-    data.forEach(rowData => {
-      const newRow = document.createElement('tr');
-      Object.values(rowData).forEach(value => {
-        const newCell = document.createElement('td');
-        newCell.textContent = value;
-        newRow.appendChild(newCell);
+  if (dataString) { //if dataString exists
+    const data = JSON.parse(dataString); //the json saved in local storage is read and set to the data variable
+    data.forEach(rowData => { // for each element in rowdata
+      const newRow = document.createElement('tr'); //new row created 
+      Object.values(rowData).forEach(value => { // for each value in row in rowdata
+        const newCell = document.createElement('td'); // create new field
+        newCell.textContent = value; //save field text
+        newRow.appendChild(newCell); // create the row
       });
-      table.appendChild(newRow);
-      newRow.addEventListener("click", (event) => {
-        if (event.target.tagName === "TD") {
+      table.appendChild(newRow); // add the new row to table 
+      newRow.addEventListener("click", (event) => { // add event listener which removes the row on click then saves table to local storage
+        if (event.target.tagName === "TD") { 
           const row = event.target.parentNode;
           row.parentNode.removeChild(row);
           saveTableToLocalStorage();
@@ -152,19 +142,19 @@ function loadTableFromLocalStorage() {
 }
 
 
-// Add an event listener to call the loadTableFromLocalStorage function when the page is loaded
+// call on load
 window.addEventListener('load', loadTableFromLocalStorage);
 
 
 function removeTableRow() {
-  const table = document.querySelector("#Your-choices table");
-  table.addEventListener("click", (event) => {
+  const table = document.querySelector("#Your-choices table"); // find table
+  table.addEventListener("click", (event) => { //event listener to remove the row on click
     if (event.target.tagName === "TD") {
       const row = event.target.parentNode;
       row.parentNode.removeChild(row);
     }
   });
-  saveTableToLocalStorage()
+  saveTableToLocalStorage() //save to local storage 
 }
 
 

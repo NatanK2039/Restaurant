@@ -107,7 +107,7 @@ function pierwszego_maja_menu() {
   ul.appendChild(li1);
   ul.appendChild(li2);
 
-  original.innerHTML = ""; // clear content using innerHTML
+  original.innerHTML = "";
   original.appendChild(maintext);
   original.appendChild(ul);
   replacebuttonwithmaininfo('pierwszego-maja-menu');
@@ -151,7 +151,7 @@ function pierwszego_maja_hours() {
   ul.appendChild(li6);
   ul.appendChild(li7);
 
-  original.innerHTML = ""; // clear content using innerHTML
+  original.innerHTML = "";
   original.appendChild(maintext);
   original.appendChild(ul);
   replacebuttonwithmaininfo('pierwszego-maja-hours');
@@ -202,7 +202,7 @@ function Kosciuszkimenu() {
   ul.appendChild(li1);
   ul.appendChild(li2);
 
-  original.innerHTML = ""; // clear content using innerHTML
+  original.innerHTML = "";
   original.appendChild(maintext);
   original.appendChild(ul);
   replacebuttonwithmaininfo('Kosciuszki-menu');
@@ -243,7 +243,7 @@ function Kosciuszkihours() {
   ul.appendChild(li6);
   ul.appendChild(li7);
 
-  original.innerHTML = ""; // clear content using innerHTML
+  original.innerHTML = ""; 
   original.appendChild(maintext);
   original.appendChild(ul);
   replacebuttonwithmaininfo('Kosciuszki-hours');
