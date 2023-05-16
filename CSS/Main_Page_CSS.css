@@ -44,7 +44,7 @@ article {
 }
 
 
-@media screen and (max-width:300px), screen and (max-height: 500px) {/* targets the media  screen if it has a lower width than 300 or lower hight than 500 */
+@media screen and (max-width:400px), screen and (max-height: 600px) {/* targets the media  screen if it has a lower width than 300 or lower hight than 500 */
     .container {
       padding: 10px;
     }
@@ -54,11 +54,17 @@ article {
     }
   
     article {
+      margin-right: 0px;
+      margin-left: 0px;
       margin-bottom: 20px;
+      max-width: 5px;
+      padding-left: 20px; /* padding is set */
+      padding-right: 20px;/* padding is set */
+
     }
   
     p {
-      font-size: 14px;
+      font-size: 10px;
       line-height: 1.5;
     }
   
@@ -76,10 +82,5 @@ article {
   
   
   @media screen and (max-width: 480px), screen and (max-height: 500px) { /* targets the media  screen if it has a max width of 480 */
-    article {
-      flex-direction: column; /* sets the direction elements are spaced in */
-      padding-left: 20px; /* padding is set */
-      padding-right: 20px;/* padding is set */
-      flex-basis: 100%; /*distributes space evenly between articles */
-    }
+
   }
