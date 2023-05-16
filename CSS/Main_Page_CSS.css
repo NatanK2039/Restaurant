@@ -25,6 +25,7 @@ h1 {
 
 article {
     display: flex; /* allows for flexbox functionality */
+    flex: 1; /* lets element fill entire container*/
     flex-direction: row;/* sets the direction elements are spaced in */
     padding: 5px;/* padding is set */
     padding-left: 100px; /* padding is set */
@@ -43,16 +44,42 @@ article {
 }
 
 
-@media screen and (max-width: 768px) {/* targets the media  screen if it has a max width of 768 */
+@media screen and (max-width:300px), screen and (max-height: 500px) {/* targets the media  screen if it has a lower width than 300 or lower hight than 500 */
+    .container {
+      padding: 10px;
+    }
+  
+    .dog-with-family {
+      display: none;
+    }
+  
+    article {
+      margin-bottom: 20px;
+    }
+  
+    p {
+      font-size: 14px;
+      line-height: 1.5;
+    }
+  
+    ul {
+      font-size: 14px;
+      padding-left: 20px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  
+    ul li {
+      margin-bottom: 8px;
+    }
+  }
+  
+  
+  @media screen and (max-width: 480px), screen and (max-height: 500px) { /* targets the media  screen if it has a max width of 480 */
     article {
       flex-direction: column; /* sets the direction elements are spaced in */
       padding-left: 20px; /* padding is set */
       padding-right: 20px;/* padding is set */
-    }
-  }
-  
-  @media screen and (max-width: 480px) { /* targets the media  screen if it has a max width of 480 */
-    article {
       flex-basis: 100%; /*distributes space evenly between articles */
     }
   }
