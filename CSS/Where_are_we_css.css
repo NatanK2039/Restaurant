@@ -110,7 +110,6 @@ h1 {
 
 
 article {
-    flex: 200px; 
     padding: 10px;
     margin: 10px;
     background: aqua;
@@ -118,17 +117,8 @@ article {
 
 @media screen and (max-width:600px), screen and (max-height: 800px) {
     #locations {
-        max-width: 1000px;
-        background-color: aliceblue;
+        max-width: 500px;
     }
-    article {
-        max-width: 1000px;
-        background-color: aliceblue;
-    }
-    body {
-        background-color: aliceblue;
-    }
-}
 
 
 
