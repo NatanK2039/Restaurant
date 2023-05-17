@@ -113,12 +113,16 @@ article {
     padding: 10px;
     margin: 10px;
     background: aqua;
+    max-width:600px;
 }
 
-@media screen and (max-width:600px), screen and (max-height: 800px) {
+@media screen and (max-width:800px), screen and (max-height: 700px) {
     #locations {
         max-width: 500px;
+
     }
 
-
+    article {
+        max-width:600px;
+    }
 
