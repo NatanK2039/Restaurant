@@ -58,7 +58,11 @@ article {
 
 
 
-@media screen and (max-width:600px), screen and (max-height: 800px) {/* targets the media  screen if it has a lower width than 300 or lower hight than 500 */
+@media screen and (max-width:600px), screen and (max-height: 800px) {
+      body {
+      zoom: 0.7;
+    }
+
     #desktop_html {
       display: none;
     }
@@ -80,14 +84,6 @@ article {
       padding: 10px;
     }
     
-    body {
-      zoom: 0.7;
-    }
-
-
-  
-
-  
     article {
       margin-right: 0px;
       margin-left: 0px;

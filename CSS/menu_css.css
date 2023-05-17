@@ -33,18 +33,6 @@ article {
   background-color: aqua; /* background color is set */
 }
 
-@media screen and (max-width: 768px) { /*targets the media screen if it has a max width of 768px */
-  article {
-    flex-basis: 50%; /*distributes space evenly between articles */
-  }
-}
-
-@media screen and (max-width: 480px) { /* targets the media  screen if it has a max width of 480 */
-  article {
-    flex-basis: 100%; /*distributes space evenly between articles */
-  }
-}
-
 .foodimage {
   width: 70%; /*sets width relative to container */
   height: 200px; /*sets height */
@@ -68,3 +56,4 @@ table, th, td {
   display: grid; /* sets the layout of the your_choices box*/
   justify-content: center; /* centers to the center of container*/
 }
+
