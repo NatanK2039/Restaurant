@@ -20,7 +20,7 @@ h1 {
     flex-wrap: wrap;/* allows to wrap onto next lines when continainer is too small */
     flex: 1;/*This dictates the priority of how much available space can be given. assuming three articles have 1-1-2 priority, then 1+1+2=4 meaning that eaach article with a priority of 1 will take up 1/4 of thee available space, and the largest article, with a priority of 2, will take up 2/4 of the available space. */
     /* A shortcut exists for this the last 2 lines. flex-flow: row wrap; */
-    max-width: 1000px;
+
 }
 
 #smolna {
@@ -108,14 +108,19 @@ h1 {
     flex-flow: row; 
 }
 
+
 article {
     flex: 200px; 
     padding: 10px;
     margin: 10px;
     background: aqua;
-    max-width: 1000px;
 }
 
+@media screen and (max-width:600px), screen and (max-height: 800px) {
+    #locations {
+        max-width: 1000px;
+    }
+}
 
 
 
