@@ -119,9 +119,11 @@ article {
 @media screen and (max-width:600px), screen and (max-height: 800px) {
     #locations {
         max-width: 1000px;
+        background-color: aliceblue;
     }
     article {
         max-width: 1000px;
+        background-color: aliceblue;
     }
     body {
         background-color: aliceblue;
