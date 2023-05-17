@@ -15,7 +15,19 @@ h1 {
     text-align: center; /* aligns the text of the element to the center */
 }
 
-.container {
+#mobile_html {
+  display: none;
+}
+
+
+          /* desktop css */
+.text_and_image_container {
+  display: flex; 
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text {
     display: flex; /* allows for flexbox functionality */
     flex-direction: row; /* sets the direction elements are spaced in */
     justify-content: center; /* centers content horizontally  inside container */
@@ -44,20 +56,37 @@ article {
 }
 
 
+
+
 @media screen and (max-width:600px), screen and (max-height: 800px) {/* targets the media  screen if it has a lower width than 300 or lower hight than 500 */
+    #desktop_html {
+      display: none;
+    }
+
+    #mobile_html {
+      display: flex; 
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    #text_and_image_container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #text {
+      display: flex;
+      flex-direction: row;
+      padding: 10px;
+    }
+    
     body {
       zoom: 0.7;
     }
 
-   .container {
-      position: relative;
-      left: -50px;
-      padding: 10px;
-    }
+
   
-    .dog-with-family {
-      display: none;
-    }
+
   
     article {
       margin-right: 0px;
