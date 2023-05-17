@@ -118,12 +118,11 @@ article {
 
 @media screen and (max-width:800px), screen and (max-height: 700px) {
     #locations {
-        max-width: 450px;
-        justify-content: center;
+        max-width: 500px;
+
     }
 
     article {
-        max-width:400px;
+        max-width:500px;
     }
 
-}
