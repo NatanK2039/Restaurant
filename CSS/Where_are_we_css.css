@@ -108,13 +108,14 @@ h1 {
     flex-flow: row; 
 }
 
-
 article {
     flex: 200px; 
     padding: 10px;
     margin: 10px;
     background: aqua;
+    max-width: 1000px;
 }
+
 
 
 
