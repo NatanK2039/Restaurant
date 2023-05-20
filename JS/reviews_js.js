@@ -1,6 +1,3 @@
-
-
-
 function storageavailable(type) { //exact copy from source.lab09 - data + persistance
   try {
     var storage = window[type];
@@ -20,15 +17,19 @@ function storageavailable(type) { //exact copy from source.lab09 - data + persis
       storage.length !== 0;
   }
 }
+
 function reviewsubmition() {
   var customername = document.getElementById("customername").value; //the correct input field is found 
   var contactdetails = document.getElementById("contact").value; //the correct input field is found 
   var reviewmessage = document.getElementById("review").value; //the correct input field is found 
-  var message = "Name:" + customername + "\n" + "Contact:" + contactdetails + "\n" + "Review:" + reviewmessage + "\n"; //message concatonated 
-  secure = securitycheck(message)
-  if (!secure) {
+
+  var valid = input_validation(customername, contactdetails, reviewmessage)
+  if (!valid) {
     return
   }
+  var message = "Name:" + customername + "\n" + "Contact:" + contactdetails + "\n" + "Review:" + reviewmessage + "\n"; //message concatonated
+
+
   var currentreviews = document.getElementById("currentreviews"); //the paragraph element is found 
   currentreviews.innerHTML += message + "<br>"; //the paragraph element is altered to contain the message 
   setlocalstorage(message)// the setlocal storage function is called and the message is passed
@@ -59,15 +60,44 @@ function loadreviews() {
   }
 }
 
-function securitycheck(message) {
-  if (/^[a-zA-Z0-9\s:]+$/.test(message) && message.length <= 500) {
-    return true;
-  } else {
+function input_validation(customername, contactdetails, reviewmessage) {
+  present = presence_check(customername, contactdetails, reviewmessage)
+
+  var user_input = customername + "\n" + contactdetails + "\n" + reviewmessage + "\n"; //message concatonated
+  appropriate_chars = character_check(user_input)
+
+  if(!present || !appropriate_chars){
+    return false;
+  }
+  return true
+}
+
+
+function character_check(message) {
+  if (/[^a-zA-Z0-9.@\s]/.test(message) || message.length > 500) {
     alert("Ensure that the message has less than 500 characters, and only letters and numbers are used.");
     return false;
+  } else {
+    return true;
   }
 }
 
+function presence_check(customername, contactdetails, reviewmessage) {
+  if (customername.length <= 0) {
+    alert ("Entering A name is mandatory before submitting.");
+    return false; 
+  }
+  if (contactdetails.length <= 0) {
+    alert ("Entering Contact Details is mandatory before submitting.");
+    return false; 
+  }
+  if (reviewmessage.length <= 0) {
+    alert ("Entering a Review is mandatory before submitting.");
+    return false; 
+  }
+  return true;
+
+}
 
 // function clear() {
 //   localStorage.clear();
