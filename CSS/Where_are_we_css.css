@@ -34,7 +34,7 @@ h1 {
     display: flex;/* creates flexbox functionality */
     flex: 1 100px; /* sets size relative to other elements */
     flex-flow: row; /* sets the flex-direction as well as flex-wrap to row*/
-    background-color: aqua; /*sets the background color */
+
 }
 
 #smolna-image{
@@ -47,8 +47,6 @@ h1 {
     display: flex; /* creates flexbox functionality */
     justify-content: space-evenly; /* equally places the elements using the full container length */
     flex-flow: row; /* sets the flex-direction as well as flex-wrap to row*/
-
-
 }
 
 /* all below code is the same as above */
@@ -65,13 +63,12 @@ h1 {
     flex: 1 100px;
     flex-flow: row;
     flex-direction: row;
-    background-color: aqua;
+
 }
 
 #pierwszego-maja-image{
     width: 200px;
     height: 200px;
-
 }
 
 #pierwszego-maja-bottom{
@@ -93,7 +90,7 @@ h1 {
     flex: 1 100px;
     flex-flow: row;
     flex-direction: row;
-    background-color: aqua;
+
 }
 
 #Kosciuszki-image{
@@ -112,8 +109,10 @@ h1 {
 article {
     padding: 10px;
     margin: 10px;
-    background: aqua;
     max-width:600px;
+    color: white;
+    font-size: 20px;
+    outline: 1px solid #FFFFFF;
 }
 
 @media screen and (max-width:800px), screen and (max-height: 700px) {

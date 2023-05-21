@@ -75,7 +75,7 @@ function input_validation(customername, contactdetails, reviewmessage) {
 
 function character_check(message) {
   if (/[^a-zA-Z0-9.@\s]/.test(message) || message.length > 500) {
-    alert("Ensure that the message has less than 500 characters, and only letters and numbers are used.");
+    alert("Ensure that the message has less than 500 characters, and only numbers, spaces, '@' signs, '.' signs, and latin letters are used.");
     return false;
   } else {
     return true;
