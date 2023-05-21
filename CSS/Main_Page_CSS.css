@@ -55,6 +55,9 @@ article {
     object-fit: cover; /* lets it cover its container */
 }
 
+ul {
+  font-size: 20px;
+}
 
 
 
