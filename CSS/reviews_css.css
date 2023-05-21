@@ -32,7 +32,8 @@ article {
 }
 
 .reviews {
-    background-color: aqua;/* sets background color */
+    outline: 1px solid #FFFFFF;
+    color: white;
 }
 
 .input {
@@ -48,8 +49,9 @@ article {
   .input label {
     margin-top: 25px;/* margin is set */
     margin-bottom: 0.5rem;/* margin is set relative to size of root element*/
-    background-color: aqua; /* background color is set */
     max-width: 267px;/* max width is set */
+    outline: 1px solid #FFFFFF;
+    color: white;
   }
   
   .input input {

@@ -30,7 +30,8 @@ article {
   max-height: 350px; /*max height is set */
   margin: 10px; /* margin is set */
   padding: 10px; /* padding is set */
-  background-color: aqua; /* background color is set */
+  color: white;
+  outline: 1px solid #FFFFFF
 }
 
 .foodimage {
@@ -40,6 +41,7 @@ article {
 
 .foodtitle {
   font-size: 30px; /* sets font size */
+  color: white;
 }
 
 aside{
@@ -49,11 +51,12 @@ aside{
 }
 
 table, th, td {
-  border:1px solid black; /* sets border for table and its contents */
+  border:1px solid white; /* sets border for table and its contents */
 }
 
 #your_choices{
   display: grid; /* sets the layout of the your_choices box*/
   justify-content: center; /* centers to the center of container*/
+  font-size: 20px;
 }
 
